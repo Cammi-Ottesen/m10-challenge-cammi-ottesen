@@ -1,0 +1,247 @@
+/* General Styles */
+html {
+    box-sizing: border-box;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: "Poppins", Roboto, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: #f2f2f2;
+    border-bottom: solid 1px #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    height: 90px;
+    position: relative;
+  }
+  
+  .logo {
+    width: 150px;
+    height: 90px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center; /* Align everything vertically */
+  }
+  
+  .navbar a {
+    color: #082b59;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 18px;
+    display: inline-flex; /* Align icon and text horizontally */
+    align-items: center; /* Vertical alignment within the link */
+    gap: 8px; /* Spacing between icon and text */
+  }
+  
+  .navbar a.active {
+    color: #d98555;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  .navbar i {
+    font-size: 18px; /* Same size as text */
+    line-height: 2; /* Prevents misalignment caused by line-height */
+    text-decoration: none; /* Remove underline from font awesome icon */
+  }
+  
+  
+  /* Search Bar Styles */
+  .search-bar {
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-bar button {
+    padding: 8px 12px;
+    background-color: #082b59;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #59331d;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #131d26;
+    margin: 0;
+  }
+  
+  p {
+    font-family: "Lato", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+    
+  
+  /* Contact Us Button */
+  .contactus {
+    display: inline-block;
+    background-color: #082b59;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  
+  .contactus a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .contactus:hover {
+    background-color: #59331d;
+    color: white;
+  }
+  
+  /* Footer */
+  footer {
+    height: 100px;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0 30px;
+
+  }
+  
+  footer .socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  footer .socials a {
+    background-color: #d98555;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  footer .socials a:hover {
+    background-color: #59331d;
+  }
+
+  .socials, .social {
+    display:  inline-block;
+  }
+
+  .socials i {
+    font-size: 20px;
+    color: white;
+  }
+
+  
+  footer p {
+    margin: 0;
+    color: #131d26;
+    font-size: 14px;
+  }
+  
+  /* Miscellaneous */
+  a:hover {
+    color: #59331d;
+  }
+  
+ 
+
+  /* Products Main Container Styles*/
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+  
+  .image-content-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* 1:2:1 ratio for image, content, image */
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .content-container {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .content-container h2 {
+    font-size: 24px;
+    color: #131D26;
+    margin-bottom: 15px;
+  }
+  
+  .content-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .image-content-row {
+      grid-template-columns: 1fr; /* Stacks all items vertically */
+    }
+  
+    .content-container {
+      text-align: center;
+    }
+  }

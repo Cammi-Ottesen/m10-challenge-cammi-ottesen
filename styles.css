@@ -1,0 +1,696 @@
+/* General Styles */
+html {
+    box-sizing: border-box;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: "Poppins", Roboto, sans-serif;
+    background-color: #082b59;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: #082B59;
+    border-bottom: solid 1px #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    height: 90px;
+    position: relative;
+  }
+  
+  .logo {
+    width: 150px;
+    height: 90px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    bottom: 15px;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center; 
+    background-color: #082B59;
+  }
+
+  
+  .navbar a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 18px;
+    display: inline-flex; 
+    align-items: center; 
+    gap: 8px; 
+  }
+
+  .navbar a:hover {
+    color: #D98555; 
+}
+  
+  .navbar a.active {
+    color: #d98555;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  .navbar i {
+    font-size: 18px; 
+    line-height: 2; 
+    text-decoration: none; 
+  }
+  
+  .logo
+  {
+    padding-bottom: 20px;
+  }
+  
+  /* Search Bar Styles */
+  .search-bar {
+    display: flex;
+    margin-left: auto;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .search-bar button {
+    padding: 8px 12px;
+    background-color: #082b59;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #59331d;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #131d26;
+    margin: 0;
+  }
+  
+  p {
+    font-family: "Lato", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+  }
+  
+  /* About Main Container */
+
+  /* Main Wrapper */
+.main-wrapper {
+  background-color: #082B59; 
+ padding: 50px 0;  
+}
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    background-color: white;
+    margin: 50px auto;
+    padding: 20px;
+  }
+
+ /* Hide all images by default */
+ .image-row .image-item {
+    display: block; /* Default state for larger screens */
+ } 
+
+
+  /* Bottom background image */
+  .bottom-beans {
+    height: 300px;
+    background-image: url('./images/gulp-bottom-beans.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    margin-top: auto;
+  }
+  
+  /* Image Row */
+  .image-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .image-item {
+    flex: 1;
+    margin: 0 10px;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* About Us Section */
+  .aboutus {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .container p {
+    font-size: 24px;
+    font-family: "Lato", sans-serif;
+    color: #131d26;
+  }
+  
+  .container h2 {
+    font-weight: 500;
+    font-size: 50px;
+    color: #131d26;
+    margin: 0;
+  }
+  
+  /* Contact Us Button */
+  .contactus {
+    display: inline-block;
+    background-color: #082b59;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  
+  .contactus a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .contactus:hover {
+    background-color: #59331d;
+    color: white;
+  }
+  
+  /* Footer */
+  footer {
+    height: 100px;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0 30px;
+
+  }
+  
+  footer .socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  footer .socials a {
+    background-color: #d98555;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  footer .socials a:hover {
+    background-color: #59331d;
+  }
+
+  .socials, .social {
+    display:  inline-block;
+  }
+
+  .socials i {
+    font-size: 20px;
+    color: white;
+  }
+
+  
+  footer p {
+    margin: 0;
+    color: #131d26;
+    font-size: 14px;
+  }
+  
+  /* Miscellaneous */
+  a:hover {
+    color: #59331d;
+  }
+  
+  /* Media Queries */
+  
+  /* Small devices (phones, less than 600px) */
+  @media (max-width: 599px) {
+    .header {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      position: static;
+      transform: none;
+      gap: 10px;
+    }
+  
+    .search-bar {
+      margin-top: 10px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .container {
+      margin: 20px;
+    }
+  
+    .image-row {
+      flex-direction: column;
+    }
+  
+    .image-item {
+      margin: 10px 0;
+      height: 200px;
+    }
+  
+    .contactus {
+      width: 100%;
+      text-align: center;
+    }
+    .bottom-beans {
+        height: 150px;
+        background-size: cover;
+    }
+
+    /* Show only the drinking coffee image on mobile */
+    .image-row .coffee-beans,
+    .image-row .pouring-coffee {
+        display: none;
+    }
+
+    .image-row .drinking-coffee {
+        display: block;
+    }
+  }
+  
+  /* Medium devices (tablets, 600px to 1024px) */
+  @media (min-width: 600px) and (max-width: 1024px) {
+    .header {
+      flex-direction: row;
+      padding: 10px;
+    }
+  
+    .navbar {
+      gap: 15px;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    .image-item {
+      height: 250px;
+    }
+  
+    .container {
+      margin: 30px;
+      padding: 15px;
+    }
+    
+  }
+  
+  /* Large devices (desktops, more than 1024px) */
+  @media (min-width: 1025px) {
+    .navbar a {
+      font-size: 18px;
+    }
+  
+    .container {
+      margin: 50px auto;
+    }
+  
+    .image-item {
+      height: 300px;
+    }
+  
+    .contactus {
+      width: auto;
+    }
+    .bottom-beans {
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Show only the drinking coffee image on mobile */
+@media (max-width: 768px) {
+    .image-row .coffee-beans,
+    .image-row .pouring-coffee {
+      display: none; 
+    }
+  
+    .image-row .drinking-coffee {
+      display: block; 
+    }
+  }
+    
+  }
+
+
+
+  /* Products Main Container Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  max-width: 100%;
+}
+
+.image-content-row {
+  display: flex; 
+  justify-content: space-between;
+  align-items: stretch; 
+}
+
+.image-container,
+.content-container {
+  flex: 1; 
+}
+
+.image-container img {
+  width: 100%;
+  height: auto; 
+  display: block; 
+}
+
+.content-container {
+  background-color: #ffffff; 
+  text-align: center;
+  
+}
+
+.content-container h2 {
+  font-size: 24px;
+  color: #131D26;
+  padding: 20px 40px 0px 40px;
+
+}
+
+.content-container p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #131D26;
+  padding: 0px 100px 0px 100px;
+}
+
+  
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .image-content-row {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .image-container,
+  .content-container {
+    flex: none; 
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+
+  .content-container h2 {
+    font-size: 22px;
+    padding: 20px; 
+  }
+
+  .content-container p {
+    font-size: 15px; 
+    padding: 0px 20px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .content-container h2 {
+    font-size: 20px; 
+  }
+
+  .content-container p {
+    font-size: 14px; 
+    padding: 0px 10px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .content-container h2 {
+    font-size: 18px; 
+  }
+
+  .content-container p {
+    font-size: 13px; 
+    padding: 0px 5px; 
+  }
+}
+
+/* Home page styling */
+.background-container-home {
+  background-image: url('./images/gulp-drinking-coffee.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 100vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.content-container-home {
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 30px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+  text-align: center; 
+  max-width: 600px; 
+}
+
+.content-container-home h1 {
+  font-size: 36px; 
+  color: #131D26; 
+  margin-bottom: 20px; 
+}
+
+.content-container-home p {
+  font-size: 18px; 
+  line-height: 1.6; 
+  color: #131D26; 
+  margin: 10px 0; 
+}
+
+.products-button {
+  display: inline-block; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  color: white; 
+  background-color: #131D26; 
+  border: none; 
+  border-radius: 5px;
+  text-decoration: none; 
+  text-align: center; 
+  transition: background-color 0.3s; 
+  cursor: pointer; 
+}
+
+.products-button:hover {
+  background-color: #D98555; 
+  color: white;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .content-container-home {
+    padding: 20px; 
+    max-width: 90%; 
+  }
+
+  .content-container-home h1 {
+    font-size: 28px; 
+  }
+
+  .content-container-home p {
+    font-size: 16px; 
+  }
+
+  .products-button {
+    padding: 8px 16px; 
+    font-size: 14px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .content-container-home {
+    padding: 15px; 
+  }
+
+  .content-container-home h1 {
+    font-size: 24px; 
+  }
+
+  .content-container-home p {
+    font-size: 14px; 
+  }
+
+  .products-button {
+    padding: 6px 12px; 
+    font-size: 12px; 
+  }
+}
+
+
+/* Contact Page Styles */
+
+body {
+  margin: 0; 
+  font-family: Arial, sans-serif; 
+}
+
+.contact {
+  display: flex; 
+  height: 800px; 
+}
+
+.contact-left-side {
+  width: 60%; 
+  background-image: url('./images/gulp-menu.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-color: #fff;
+  padding: 20px;
+  border-right: 2px solid #ccc; 
+}
+
+.contact-right-side {
+  width: 40%; 
+  padding: 20px;
+  background-color: #D98555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-content {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 500px; 
+  width: 500px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #555;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0; 
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  color: #555;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column; 
+    height: auto; 
+  }
+
+  .contact-right-side {
+    width: 100%; 
+    order: 1; 
+  }
+
+  .contact-left-side {
+    width: 100%; 
+    height: 300px;
+    border-right: none; 
+    order: 2; 
+  }
+
+  .contact-content {
+    width: 90%; 
+    height: auto; 
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-content {
+    padding: 15px; 
+  }
+
+  h2 {
+    font-size: 24px; 
+  }
+
+  p {
+    font-size: 16px; 
+  }
+
+  li {
+    font-size: 14px; 
+  }
+}
+
+
+
